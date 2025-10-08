@@ -21,10 +21,10 @@
                 13668042551@163.com
                 <span class="contact-icon"><i class="icon-email"></i></span>
               </p>
-              <p>
+              <!-- <p>
                 Github
                 <span class="contact-icon"><i class="icon-github"></i></span>
-              </p>
+              </p> -->
             </div>
           </div>
         </div>
@@ -514,7 +514,7 @@ const exportPDF = async () => {
     padding: 0;
   }
   /* gap: 4px; */
-  
+
   strong {
     display: inline-block;
     width: 100px;
