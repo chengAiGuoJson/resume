@@ -84,4 +84,28 @@ pnpm deploy
 
 ## 许可证
 
+## 部署到github pages
+1. **安装gh-pages**
+```bash
+pnpm install gh-pages --save-dev
+
+2. **修改package.json**
 MIT License
+
+```json
+{
+  "scripts": {
+    "deploy": "npm run build && gh-pages -d dist"
+  }
+}
+```
+
+3. **部署到gh-pages分支**
+```bash
+pnpm run deploy
+
+npx gh-pages -d dist
+```
+
+4. **访问你的项目**
+项目部署完成后，你可以在 `https://<你的用户名>.github.io/<项目名>` 访问你的项目。
