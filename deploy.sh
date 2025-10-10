@@ -23,6 +23,6 @@ git remote rm origin 2>/dev/null || true
 git remote add origin https://github.com/chengAiGuoJson/resume.git
 
 # 推送到远程仓库的gh-pages分支
-git push -f origin main
+git push -f origin master:gh-pages
 
 cd -
