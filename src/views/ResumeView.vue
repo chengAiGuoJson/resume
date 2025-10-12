@@ -21,10 +21,12 @@
                 13668042551@163.com
                 <span class="contact-icon"><i class="icon-email"></i></span>
               </p>
-              <!-- <p>
-                Github
+              <p>
+                <a href="https://github.com/chengAiGuoJson" target="_blank">
+                  Github
+                </a>
                 <span class="contact-icon"><i class="icon-github"></i></span>
-              </p> -->
+              </p>
             </div>
           </div>
         </div>
@@ -304,6 +306,11 @@ const exportPDF = async () => {
   }
   .resume-actions {
     display: none;
+    position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  margin-bottom: 0;
   }
 }
 
@@ -327,40 +334,56 @@ const exportPDF = async () => {
 }
 
 .resume-actions {
-  margin-bottom: 20px;
-  text-align: right;
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .action-button {
   color: var(--color-white);
   border: none;
-  padding: 10px 20px;
+  padding: 12px 20px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 500;
   cursor: pointer;
-  border-radius: 4px;
-  transition:
-    background-color 0.3s,
-    transform 0.2s;
+  border-radius: 8px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  min-width: 120px;
+  letter-spacing: 0.5px;
+  opacity: 0.9;
 }
 
 .action-button:hover {
-  transform: translateY(-2px);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  opacity: 1;
+}
+
+.action-button:active {
+  transform: translateY(-1px);
 }
 
 .print-button {
-  background-color: var(--color-black);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .print-button:hover {
-  background-color: var(--color-dark-gray);
+  background-color: var(--color-black);
 }
 
 .pdf-button {
-  background-color: var(--color-gray);
+  background-color: rgba(51, 51, 51, 0.8);
 }
 
 .pdf-button:hover {
